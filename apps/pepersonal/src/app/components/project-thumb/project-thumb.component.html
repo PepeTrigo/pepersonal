@@ -1,0 +1,11 @@
+<div class="card">
+  <!-- <pre>{{ project | json }}</pre> -->
+  <img class="image" src="{{ thumbData.img }}" alt="" />
+  <h3 class="title">{{ thumbData.name }}</h3>
+</div>
+<ul class="taxonomies">
+  <li *ngFor="let category of thumbData.type">{{ category.slug }}</li>
+</ul>
+<ul class="taxonomies">
+  <li *ngFor="let category of thumbData.tech">{{ category.slug }}</li>
+</ul>

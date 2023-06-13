@@ -1,0 +1,5 @@
+.thumbs {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
