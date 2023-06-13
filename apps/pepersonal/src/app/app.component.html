@@ -1,1 +1,45 @@
-<pepersonal-nx-welcome></pepersonal-nx-welcome>
+<header class="header">
+  <pt-brand class="logo" [routerLink]="['']"></pt-brand>
+
+  <nav class="nav header__nav">
+    <ul class="nav__container">
+      <li class="nav__item">
+        <a
+          class="nav__link"
+          [routerLink]="['about']"
+          routerLinkActive="nav__link--active"
+        >
+          About
+        </a>
+      </li>
+      <li class="nav__item">
+        <a
+          class="nav__link"
+          [routerLink]="['works']"
+          routerLinkActive="nav__link--active"
+        >
+          Works
+        </a>
+      </li>
+      <li class="nav__item">
+        <a
+          class="nav__link"
+          [routerLink]="['contact']"
+          routerLinkActive="nav__link--active"
+        >
+          Contact
+        </a>
+      </li>
+      <li class="nav__item">
+        <a
+          class="nav__link"
+          [routerLink]="['blog']"
+          routerLinkActive="nav__link--active"
+        >
+          Blog
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<router-outlet></router-outlet>
