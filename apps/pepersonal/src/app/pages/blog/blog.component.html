@@ -1,0 +1,7 @@
+<h1>Blog</h1>
+<main class="content">
+  <article *ngFor="let post of posts">
+    <h2>{{ post.title.rendered }}</h2>
+    <div [innerHTML]="post.excerpt.rendered"></div>
+  </article>
+</main>
