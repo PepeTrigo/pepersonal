@@ -1,0 +1,21 @@
+:root {
+  --base-size: 1em;
+  --type-scale: 1.2;
+  --h5: calc(var(--base-size) * var(--type-scale));
+  --h4: calc(var(--h5) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
+
+  --color-brand-highlight: #3fa9f5;
+
+  --color-input-text: #1e1e1e;
+  --color-input-focus: #fff;
+  --color-input-rest: #3a3a3a;
+  --color-input-valid-text: #fff;
+
+  --color-dropdown-text: #777777;
+  --color-dropdown-focus: #5a5a5a;
+  --color-dropdown-text-focus: #ffffff;
+  --color-option-text: #bbbbbb;
+}

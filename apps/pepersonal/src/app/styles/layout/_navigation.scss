@@ -1,0 +1,28 @@
+.nav {
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    margin-left: 1rem;
+  }
+
+  &__link {
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &--active {
+      border-bottom: 5px solid var(--color-brand-highlight);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__container {
+    flex-direction: column;
+  }
+}

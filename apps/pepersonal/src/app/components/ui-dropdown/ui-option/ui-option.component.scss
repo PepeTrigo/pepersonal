@@ -1,0 +1,37 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+@import '../../../styles/typography/fonts';
+
+:host {
+  &:last-child {
+    .option {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+}
+
+.option {
+  background-color: $color-input-rest;
+  border: none;
+  box-sizing: border-box;
+  color: $color-option-text;
+  display: block;
+  font-family: $form-font;
+  font-size: em(16);
+  height: 2.5em;
+  line-height: em(20);
+  margin: 1px 0;
+  padding: em(9) 10px em(12);
+  text-align: left;
+  transition: background-color 1s cubic-bezier(.05, .69, .14, 1);
+  width: 100%;
+
+  &:hover,
+  &:active,
+  &--active {
+    background-color: $color-input-focus;
+    color: $color-input-text;
+    outline: none;
+  }
+}

@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use 'app/styles/variables';
+@use 'app/styles/reset';
+
+@use 'app/styles/typography/fonts';
+@use 'app/styles/typography/headings';
+@use 'app/styles/typography/parragraphs';
+
+@use 'app/styles/layout/layout';
+@use 'app/styles/layout/header';
+@use 'app/styles/layout/navigation';
+
+@use 'app/styles/forms/input';

@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+@import '../../styles/typography/fonts';
+
+:host {
+  display: block;
+  position: relative;
+}
+
+.dropdown {
+  &__btn {
+    background-color: $color-input-rest;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: $color-dropdown-text;
+    font-family: $form-font;
+    font-size: em(16);
+    height: 2.5em;
+    line-height: em(20);
+    padding: em(9) 10px em(12);
+    text-align: left;
+    transition: background-color 1s cubic-bezier(.05, .69, .14, 1);
+    width: 100%;
+
+    &:focus {
+      background-color: $color-dropdown-focus;
+      color: $color-dropdown-text-focus;
+      outline: none;
+    }
+  }
+
+  &__icon {
+    fill: $color-dropdown-text;
+    position: absolute;
+    right: .5em;
+  }
+
+  &__layer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+}

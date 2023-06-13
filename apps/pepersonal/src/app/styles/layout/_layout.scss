@@ -1,0 +1,13 @@
+html {
+  background-color: rgb(18, 18, 18);
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.field-set {
+  flex: 0 0 32rem;
+}
